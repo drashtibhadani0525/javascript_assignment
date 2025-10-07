@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //sum of digit=1+7+2+9=19
+        //reverse no=91
+        //multiply=19*91=1729
+
+        let no=1729
+        let sum=0
+        let rev=0
+        let n=no
+        
+        while(no>0){
+            let r = no%10//remove
+            no=Math.floor(no/10)//seprate
+            sum=sum+r   
+             
+        }
+        // do{
+        //      let r = no%10
+        //     no=Math.floor(no/10)
+        //     sum=sum+r   
+        // }while(no>0)
+
+            document.write("Sum is"+sum)
+
+        let f=sum
+        while(sum>0){
+            let r=sum%10
+            rev = rev*10 + r
+            sum=Math.floor(sum/10)
+        }
+        // do{
+        //     let r=sum%10
+        //     rev = rev*10 + r
+        //     sum=Math.floor(sum/10)
+        // }while(sum>0)
+        
+        document.write('<br>Reverse is'+rev)
+        let m=rev*f
+        document.write('<br>Multiply is'+m)
+
+        if(m == n){
+            document.write('<br>It is magic no')
+        }else{
+            document.write('<br>It is not magic no')
+        }
+            
+    </script>
+</body>
+</html>

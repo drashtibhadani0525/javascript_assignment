@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+        // total digits = 2 5 1
+        // sum of digit= 2+5+1
+        let no=251
+        let count=0
+        let sum=0
+        let m=1
+        while(no>0){
+            let r = no%10 // 251%10=1 pachi loop chale -> 25%10=5 -> farivar loop->2%10=0
+           // count++
+            no=Math.floor(no/10) // 251/10=25 25/10=2.5=2 2/10=0.2=0
+            count++ // 1 2 5
+            sum =sum+r    //sum +=r
+            m*=r
+            
+        }
+            document.write("<br>Count no of digits"+count)
+            document.write("<br>Sum of digits"+sum)
+            document.write("Mul of digits"+m)
+        //153
+        //1^3 + 5^3 + 3^3
+        //1+125+27=153
+    </script>
+    
+</body>
+</html>
